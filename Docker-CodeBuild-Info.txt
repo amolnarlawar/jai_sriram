@@ -1,0 +1,101 @@
+Github/CodeCommit:
+
+Branching:
+main
+
+feature_1
+
+Code -> checked in -> Remote Repo Storage ( Github / CodeCommit )
+
+CodeBuild => Checkout code ( CodeCommit ( Repo Name ) )
+
+Local Checkout Environment with branch that u select.
+
+aws cloudformation deploy -> prod environment using main branch.
+:
+Development phase:
+feature_1 -> CF templates -> testing a cf templates?
+testing a cf templates => upload template in aws console or CLI
+
+feature_1 -> aws cli commands in non-prod environment -> testing your code.
+
+PR is raised : feature_1 to main 
+Merged -> into main.
+
+main
+Anup -> 
+
+iac_devops -> push remote -> PR raise -> merge into main.
+
+Build Service: CodeBuild -> Checkout your source code(CodeCommit , Repository, Branch)  in its local environment.
+Closely associated with Source Code.
+
+============================================
+AWS -> AWS Accounts : AMI ( Amazon Linux, Ubuntu ) Public to all aws accounts
+
+EC2 instance :
+Launch :
+OS -> AMI -> Image file ( Static ) -> Ubuntu, Amazon Linux , CentOs, Windows Server ( along with all libraries )
+EC2 VM -> RAM, CPU, Storage
+
+EC2 : 
+
+Launch : AMI
+EC2 -> start, stop, terminate.
+
+Docker :
+Docker Image ( OS(ubuntu) and base libraries) -> Similar AMI(ubuntu) ( OS + almost all libraries)
+Create Container from Docker Image -> Create EC2 VM using AMI
+-> Lightweight
+One or more containers running at a given time.
+
+Ubuntu Container
+Centos Container
+
+Docker Image:
+Docker Container -> HOST
+Docker Image Registry
+Docker container ( OS -> Bash shell )
+Starting and stopping 
+
+aws cli
+accessid and accesskey
+
+A1: accessid and accesskey
+
+CodeBuild AWS
+Token
+
+Github
+Token
+
+Source Code / Version Control System : Github , CodeCommit, Bitbucket, Gitlab
+
+Source Code : Github , CodeCommit, Bitbucket, Gitlab
+Docker Image : Docker Hub, ECR ( Amazon ECR) , GCR ( Google Container Registry), ACR ( Azure Container Registry)
+
+CodeBuild Project:
+Source:
+
+Build Run from develop branch
+Build Run from master branch
+
+AMI
+EC2 instance:
+created some files in EC2 -> S3 
+Terminate your EC2.
+
+CodeBuild Container:
+Started
+Inprogress
+Generating artifacts , files
+
+Terminates
+
+Codebuild Container:
+- Image ( ubuntu , Amazon Linux)
+aws/codebuild/standard:5.0
+- Compute Type 
+- IAM Service Role -> CodeBuild Project
+
+- CodeBuild Container Checkout
